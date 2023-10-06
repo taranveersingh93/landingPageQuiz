@@ -16,7 +16,7 @@ body {
     flex-direction: column;
     background-image: url("/img/LandingPage_576.png");
     background-color: var(--cf-darkblue);
-    background-position: top right;
+    background-position: top center;
     background-repeat: no-repeat;
     font-family: 'Roboto', sans-serif;
 }
