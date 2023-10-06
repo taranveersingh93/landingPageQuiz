@@ -16,7 +16,7 @@ body {
     flex-direction: column;
     background-image: url("/img/LandingPage_576.png");
     background-color: var(--cf-darkblue);
-    background-size: cover;
+    background-position: top right;
     background-repeat: no-repeat;
     font-family: 'Roboto', sans-serif;
 }
@@ -66,9 +66,8 @@ body {
 @media (min-width: 576px) {
     body {
         background-image: url("/img/LandingPage_768.png");
-        background-size: cover;
         background-repeat: no-repeat;
-        background-position-x: 75%;
+        /* background-position-x: 75%; */
     }
 }
 
