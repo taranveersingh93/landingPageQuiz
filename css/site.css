@@ -14,15 +14,122 @@ body {
 body {
     display: flex;
     flex-direction: column;
-    background-image: url("/img/LandingPage_1920.png");
-    background-position: top right;
+    background-image: url("/img/LandingPage_576.png");
+    background-color: var(--cf-darkblue);
+    background-size: cover;
     background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar-dark .navbar-brand {
+    color: var(--cf-light);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.bg-dark {
+    --bs-bg-opacity: 0;
+}
+
+.logo {
+    width: 3rem;
 }
 
 .content {
     flex: 1 0 auto;
+    color: var(--cf-light);
+}
+
+.cta-container {
+    width: 90%;
+}
+
+.title-text {
+    font-family: 'Racing Sans One', sans-serif;
+    font-size: 2.7rem;
+    line-height: 2.5rem;
+}
+
+.sub-text {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 200;
 }
 
 .footer {
     flex-shrink: 0;
 }
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    body {
+        background-image: url("/img/LandingPage_768.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: 75%;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    body {
+        background-image: url('/img/LandingPage_992.png');
+    }
+
+    .title-text {
+        font-family: 'Racing Sans One', sans-serif;
+        font-size: 3rem;
+        line-height: 2.7rem;
+    }
+    
+    .sub-text {
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 1.44rem;
+    }
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    body {
+        background-image: url('/img/LandingPage_1200.png');
+    }
+
+    .title-text {
+        font-family: 'Racing Sans One', sans-serif;
+        font-size: 3.4rem;
+        line-height: 3rem;
+    }
+    
+    .sub-text {
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 1.63rem;
+    }
+ }
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    body {
+        background-image: url('/img/LandingPage_1400.png');
+    }
+
+    .title-text {
+        font-family: 'Racing Sans One', sans-serif;
+        font-size: 3.6rem;
+        line-height: 3rem;
+    }
+    
+    .sub-text {
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 1.73rem;
+    }
+ }
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+    body {
+        background-image: url('/img/LandingPage_1920.png');
+    }
+ }
